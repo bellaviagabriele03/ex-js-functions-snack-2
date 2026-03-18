@@ -30,3 +30,17 @@ const sumArrow = (n1, n2) => {
 }
 
 sumArrow(40, 40)
+
+
+
+/////// SNACK 2
+
+// Crea una arrow function che calcola il quadrato di un numero.
+// Definisci una funzione chiamata quadrato che accetta un numero e restituisce il suo quadrato in una sola riga.
+
+const quadrato = (n) => {
+    console.log(`arrow function, il quadrato del numero ${n} = ${n * 2} `);
+
+}   
+
+quadrato(2)
