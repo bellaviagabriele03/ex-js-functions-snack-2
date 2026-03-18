@@ -41,6 +41,46 @@ sumArrow(40, 40)
 const quadrato = (n) => {
     console.log(`arrow function, il quadrato del numero ${n} = ${n * 2} `);
 
-}   
+}
 
 quadrato(2)
+
+
+//////// SNACK 3
+
+// Crea una funzione eseguiOperazione
+// Definisci una funzione eseguiOperazione che accetta tre parametri:
+// due numeri e una funzione operatore (callback). La funzione deve eseguire l'operazione fornita sui due numeri.
+
+function somma(n1, n2) {
+    const result = n1 + n2;
+    return result;
+}
+
+function sottrai(n1, n2) {
+    const result = n1 - n2;
+    return result;
+
+}
+
+function moltiplica(n1, n2) {
+    const result = n1 * n2;
+    return result;
+
+}
+
+function dividi(n1, n2) {
+    const result = n1 / n2;
+    return result;
+}
+
+const eseguiOperazione = function (n1, n2, operazione) {
+    const resultOperation = operazione(n1, n2)
+    console.log(resultOperation);
+
+}
+
+
+eseguiOperazione(5, 4, somma)
+eseguiOperazione(4,2, dividi)
+
