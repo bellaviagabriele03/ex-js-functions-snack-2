@@ -122,5 +122,26 @@ function stampaOgniSecondo(ms) {
 stampaOgniSecondo(1000)
 
 
+//////// SNACK 6
+
+// Crea un contatore automatico con setInterval
+// Definisci una funzione creaContatoreAutomatico che accetta un intervallo di tempo e
+// restituisce una funzione che avvia un setInterval,
+// incrementando un contatore e stampandolo.
 
 
+function creaContatoreAutomatico(ms) {
+    let contatore = 0;
+    const interval = setInterval(() => {
+        contatore++;
+        console.log(contatore);
+        if (contatore === 6) {
+            clearInterval(interval)
+        }
+    }, ms)
+
+
+}
+
+
+creaContatoreAutomatico(1000)
