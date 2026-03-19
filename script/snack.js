@@ -82,5 +82,20 @@ const eseguiOperazione = function (n1, n2, operazione) {
 
 
 eseguiOperazione(5, 4, somma)
-eseguiOperazione(4,2, dividi)
+eseguiOperazione(4, 2, dividi)
 
+
+///// SNACK 4 
+
+// Crea un generatore di funzioni creaTimer
+// Scrivi una funzione creaTimer che accetta un tempo (in ms) e 
+// restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!".
+
+function creaTimer(ms) {
+    return setTimeout(() => {
+        console.log("Tempo scaduto !");
+
+    }, ms)
+}
+
+creaTimer(1000)
